@@ -14,7 +14,7 @@ Log aggregation in Kubernetes is different than logging on traditional servers o
 
 **How does FluentBit work?**
 
-Kubernetes manages a cluster of nodes, so our log agent tool will need to run on every node to collect logs from every POD, hence Fluent Bit is deployed as a DaemonSet. To get started with FluentBit, we need to setup few resources on our cluster,
+Kubernetes manages a cluster of nodes, so our log agent tool will need to run on every node to collect logs from every POD, hence Fluent Bit is deployed as a DaemonSet. To get started with FluentBit<sup>[1],[2]</sup>, we need to setup few resources on our cluster,
 
 - **Namespace:** `amazon-cloudwatch`
 - **Service Account:** `fluent-bit`
@@ -258,7 +258,7 @@ In this blog, I will show you how to setup logging in EKS using FluentBit.
 
 1. ## 📒 Conclusion
 
-   Here we have demonstrated how to use external dns in kubernetes. You can use this feature for having friendly user names for resources in our cluster.
+   Here we have demonstrated how to use Fluent Bit for logging containers in kubernetes. You can use this feature for Fargate as well or create dashboards with Grafana or Kibana.
 
 1. ## 🧹 CleanUp
 
@@ -284,7 +284,7 @@ In this blog, I will show you how to setup logging in EKS using FluentBit.
 
 ## 📌 Who is using this
 
-This repository aims to show how to use external dns for persistent storage to secure AWS EKS to new developers, Solution Architects & Ops Engineers in AWS. Based on that knowledge these Udemy [course #1][102], [course #2][101] helps you build complete architecture in AWS.
+This repository aims to show how to do container logging to new developers, Solution Architects & Ops Engineers in AWS. Based on that knowledge these Udemy [course #1][102], [course #2][101] helps you build complete architecture in AWS.
 
 ### 💡 Help/Suggestions or 🐛 Bugs
 
@@ -298,7 +298,6 @@ Thank you for your interest in contributing to our project. Whether it is a bug 
 
 1. [FluentBit Docs: FluentBit for Kubernetes][1]
 1. [AWS Docs: FluentBit as DaemonSet][2]
-1. [Wiki: Albedo][2]
 
 ### 🏷️ Metadata
 
