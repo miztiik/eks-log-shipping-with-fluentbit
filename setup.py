@@ -9,14 +9,14 @@ setuptools.setup(
     name="eks_log_shipping_with_fluentbit",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="eks-log-shipping-with-fluentbit",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
     author="author",
 
-    package_dir={"": "eks_log_shipping_with_fluentbit"},
-    packages=setuptools.find_packages(where="eks_log_shipping_with_fluentbit"),
+    package_dir={"": "stacks"},
+    packages=setuptools.find_packages(where="stack"),
 
     install_requires=[
         "aws-cdk.core==1.111.0",
