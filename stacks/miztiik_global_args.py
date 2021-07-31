@@ -6,5 +6,5 @@ class GlobalArgs():
     OWNER = "MystiqueAutomation"
     REPO_NAME = "eks-log-shipping-with-fluentbit"
     SOURCE_INFO = f"https://github.com/miztiik/{REPO_NAME}"
-    VERSION = "2020-07-08"
+    VERSION = "2021-07-08"
     MIZTIIK_SUPPORT_EMAIL = ["mystique@example.com", ]
